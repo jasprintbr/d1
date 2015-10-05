@@ -27,44 +27,14 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <script type="text/javascript" charset="utf-8">
-		// onSuccess Callback
-// This method accepts a Position object, which contains the
-// current GPS coordinates
-//
-var onSuccess = function(position) {
-    alert('Latitude: '          + position.coords.latitude          + '\n' +
-          'Longitude: '         + position.coords.longitude         + '\n' +
-          'Altitude: '          + position.coords.altitude          + '\n' +
-          'Accuracy: '          + position.coords.accuracy          + '\n' +
-          'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-          'Heading: '           + position.coords.heading           + '\n' +
-          'Speed: '             + position.coords.speed             + '\n' +
-          'Timestamp: '         + position.timestamp                + '\n');
-};
-
-// onError Callback receives a PositionError object
-//
-function onError(error) {
-    alert('code: '    + error.code    + '\n' +
-          'message: ' + error.message + '\n');
-}
-function latitude(){
-navigator.geolocation.getCurrentPosition(onSuccess, onError);
-}
-		</script>
+        
         <title>Primeira Aplicação</title>
     </head>
     <body>
     
  <div class="app">
-            <h1><a href="http://appthepoint.com.br/mapauser/index.php" title="THE POINT">THE POINT</a></h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Procurando eventos...</p>
-                <p class="event received">Procurando eventos...</p>
-                <a href="um.html"><button  style="width: 100px; height: 40px"  >INFORMAÇÕES</button></a>
-                <a onClick="latitude()"><button  style="width: 100px; height: 40px"  >SUA POSIÇÃO</button></a><BR>
-            </div>
+            <h1>JAILSON DA SILVA DOS SANTOS</h1>
+           
         </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
